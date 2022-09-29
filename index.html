@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CS50FanPage</title>
+    <link
+      rel="icon"
+      href="https://cs50.harvard.edu/x/2022/favicon.ico?1663894800"
+    />
+    <link rel="stylesheet" href="./static/base.css" />
+    <link rel="stylesheet" href="./static/home/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Josefin+Slab:wght@500;700&family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="">
+      <div class="nav">
+        <div class="logo">
+          <img src="./static/assets/logo.svg" alt="logo" class="" />
+        </div>
+        <nav class="desktop desktop-links">
+          <a href="#" class="">HOME</a>
+          <a href="#" class="">FAN GALLERY</a>
+          <a href="#" class="">COMMENTS</a>
+          <a href="#" class="">CS50 WALL</a>
+        </nav>
+        <nav class="mobile" style="color: #990000; margin-left: 8px">
+          <i class="fa-solid fa-burger fa-3x menu" onclick="show()"></i>
+        </nav>
+      </div>
+    </header>
+    <main class="">
+      <div class="mobile backdrop visible">
+        <div class="nothing" onclick="noShow()"></div>
+        <div class="slide-in right bdr">
+          <div class="content">
+            <div class="c" onclick="noShow()">
+              <div class="circle">
+                <i class="fa-solid fa-xmark fa-2x"></i>
+              </div>
+            </div>
+            <div class="mobile-links">
+              <a href="#" class="" style="margin-top: 0">HOME</a>
+              <a href="#" class="">FAN GALLERY</a>
+              <a href="#" class="">COMMENTS</a>
+              <a href="#" class="">CS50 WALL</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero">
+        <div class="bg off">
+          <img
+            src="./static/assets/cs50rubberduck.jpg"
+            alt="background"
+            class=""
+          />
+        </div>
+        <div class="word off">
+          <div class="h">
+            <h1 class="head">
+              This
+              <span class="">
+                <p>IS</p> </span
+              >CS50
+              <div class="desktop">
+                <hr />
+              </div>
+            </h1>
+            <div class="desktop">
+              <i class="fa-solid fa-spinner fa-5x spinner paused"></i>
+            </div>
+            <div class="mobile">
+              <i class="fa-solid fa-spinner fa-2x spinner paused"></i>
+            </div>
+          </div>
+          <div class="gifs desktop">
+            <div class="fr">
+              <i class="fa-solid fa-rocket fa-3x rocket paused"></i>
+            </div>
+            <div class="img">
+              <div class="">
+                <img
+                  src="https://cdn.cs50.net/2016/fall/video_projects/staff_gifs/harvard/gifs/Arturo-Real.gif"
+                  alt="arturo"
+                  class=""
+                />
+              </div>
+              <div class="not-tab">
+                <img
+                  src="https://cdn.cs50.net/2016/fall/video_projects/staff_gifs/harvard/gifs/Brian-Yu.gif"
+                  alt="brian yu"
+                  class=""
+                />
+              </div>
+              <div class="">
+                <img
+                  src="https://cdn.cs50.net/2016/fall/video_projects/staff_gifs/harvard/gifs/Athena-Kan.gif"
+                  alt="athena"
+                  class=""
+                />
+              </div>
+              <div class="not-tab">
+                <img
+                  src="https://cdn.cs50.net/2016/fall/video_projects/staff_gifs/harvard/gifs/Xingchi-Dai.gif"
+                  alt="xingchi"
+                  class=""
+                />
+              </div>
+              <div class="">
+                <img
+                  src="https://cdn.cs50.net/2016/fall/video_projects/staff_gifs/harvard/gifs/Benjamin-Doran.gif"
+                  alt="benjamin"
+                  class=""
+                />
+              </div>
+              <div class="">
+                <img
+                  src="https://cdn.cs50.net/2016/fall/video_projects/staff_gifs/harvard/gifs/Brian-Arroyo.gif"
+                  alt="brian arroyo"
+                  class=""
+                />
+              </div>
+              <div class="not-tab">
+                <img
+                  src="https://cdn.cs50.net/2016/fall/video_projects/staff_gifs/harvard/gifs/Hillary-Do.gif"
+                  alt="hillary"
+                  class=""
+                />
+              </div>
+              <div class="not-tab">
+                <img
+                  src="https://cdn.cs50.net/2016/fall/video_projects/staff_gifs/harvard/gifs/Ava-Ganik.gif"
+                  alt="ava"
+                  class=""
+                />
+              </div>
+              <div class="">
+                <img
+                  src="https://cdn.cs50.net/2016/fall/video_projects/staff_gifs/harvard/gifs/Colton-Ogden.gif"
+                  alt="colton"
+                  class=""
+                />
+              </div>
+              <div class="not-tab">
+                <img
+                  src="https://cdn.cs50.net/2016/fall/video_projects/staff_gifs/harvard/gifs/David%20J.-Malan.gif"
+                  alt="milan"
+                  class=""
+                />
+              </div>
+              <div class="">
+                <img
+                  src="https://cdn.cs50.net/2016/fall/video_projects/staff_gifs/harvard/gifs/Helen-Wu.gif"
+                  alt="helen"
+                  class=""
+                />
+              </div>
+              <div class="">
+                <img
+                  src="https://cdn.cs50.net/2016/fall/video_projects/staff_gifs/harvard/gifs/Ethan-Zou.gif"
+                  alt="ethan"
+                  class="not-tab"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="under desktop not-tab">
+          <div class="">
+            <h2 class="head">
+              <span id="enrolled">2000000</span> Alumni Already!
+            </h2>
+          </div>
+          <div class="flagcont">
+            <div class="flags">
+              <img src="./static/assets/country1.jpg" alt="usa" class="" />
+              <img src="./static/assets/country2.png" alt="nigeria" class="" />
+              <img src="./static/assets/country3.webp" alt="britain" class="" />
+              <img
+                src="./static/assets/country4.webp"
+                alt="south africa"
+                class=""
+              />
+              <img src="./static/assets/country5.png" alt="ghana" class="" />
+            </div>
+            <p class="">Over 20 Countries</p>
+          </div>
+          <div class="join">
+            <p>Join Our Group of</p>
+            <div class="buttons alumni">
+              <button class="" type="submit" value="alumna">ALUMNA</button>
+              <button class="" type="submit" value="alumnus">ALUMNUS</button>
+            </div>
+          </div>
+        </div>
+        <div class="form">
+          <form class="" novalidate>
+            <img src="./static/assets/female2.svg" alt="alumna" id="alumna">
+            <img src="./static/assets/male2.svg" alt="alumnus" id="alumnus">
+            <!-- <p>Invalid details django</p> -->
+            <div class="email" style="margin-top: 0px;">
+              <label class="">Email</label>
+              <input type="email" name="email" id="email" placeholder="e.g jude@gmail.com">
+              <p class="error">Email cannot be empty</p>
+            </div>
+            <div class="note">
+              <label class="">Alumni Note</label>
+              <input type="text" name="note" id="note" placeholder="type: i took CS50">
+              <p class="error">Notes cannot be empty</p>
+            </div>
+            <div class="submit">
+              <button type="submit">Join!</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="mobile below off">
+        <div class="img">
+          <div class="">
+            <img
+              src="https://cdn.cs50.net/2016/fall/video_projects/staff_gifs/harvard/gifs/Arturo-Real.gif"
+              alt="arturo"
+              class=""
+            />
+          </div>
+          <div class="">
+            <img
+              src="https://cdn.cs50.net/2016/fall/video_projects/staff_gifs/harvard/gifs/Athena-Kan.gif"
+              alt="athena"
+              class=""
+            />
+          </div>
+          <div class="">
+            <img
+              src="https://cdn.cs50.net/2016/fall/video_projects/staff_gifs/harvard/gifs/Helen-Wu.gif"
+              alt="helen"
+              class=""
+            />
+          </div>
+          <div class="">
+            <img
+              src="https://cdn.cs50.net/2016/fall/video_projects/staff_gifs/harvard/gifs/Brian-Yu.gif"
+              alt="brian yu"
+              class=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="trusted">
+        <div class="off">
+            <h2 class="head">
+              <span id="enrolled">2000000</span> Alumni Already!
+            </h2>
+          </div>
+          <div class="flagcont off">
+            <div class="flags">
+              <img src="./static/assets/country1.jpg" alt="usa" class="" />
+              <img src="./static/assets/country2.png" alt="nigeria" class="" />
+              <img src="./static/assets/country3.webp" alt="britain" class="" />
+              <img
+                src="./static/assets/country4.webp"
+                alt="south africa"
+                class=""
+              />
+              <img src="./static/assets/country5.png" alt="ghana" class="" />
+              <img src="./static/assets/country6.png" alt="ukraine" class="" />
+            </div>
+            <p class="">Over 20 Countries</p>
+          </div>
+          <div class="join">
+            <div class="shadow">
+              <p>Join Our Group of</p>
+              <div class="buttons alumni">
+                <button class="" value="alumna">ALUMNA</button>
+                <button class="" value="alumnus">ALUMNUS</button>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="not-enrolled off">
+        <h2 class="head">Are you a NewBie trying to startout in Tech?&#128512;</h2>
+        <div class="beginner">
+          <img src="./static/assets/beginner.JPG" alt="beginner" class="">
+          <h2 class="blured">YOUR SEARCH HAS ENDED!!</h2>
+        </div>
+        <div class="move">
+          <i class="fa-solid fa-car-side fa-3x car"></i>
+          <h3>CS50</h3>
+        </div>
+        <div class="register">
+          <div class="cs go-left">
+            <a href="https://rb.gy/twonkf" class=""><img src="./static/assets/fullred.jpg" alt="cs50" class=""></a>
+          </div>
+          <div class="wait">
+            <div class="txt go-left">
+              <h3>Register For <a href="https://rb.gy/twonkf" class="">CS50</a> NOW&#128525;</h3>
+              <div class="tutors">
+                <div class=""><img src="https://cdn.cs50.net/2016/fall/video_projects/staff_gifs/harvard/gifs/Zack-Chauvin.gif" alt="Zack" class=""></div>
+                <div class=""><img src="https://cdn.cs50.net/2016/fall/video_projects/staff_gifs/harvard/gifs/Zamyla-Chan.gif" alt="Zamyla" class=""></div>
+                <div class="desktop"><img src="https://cdn.cs50.net/2016/fall/video_projects/staff_gifs/harvard/gifs/Marcus-Powers.gif" alt="Marcus" class=""></div>
+              </div>
+              <h3>&#128151;We are Waiting...</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="off">
+      <div class="social">
+        <a href="https://web.facebook.com/cs50?_rdc=1&_rdr" class=""><i class="fa-brands fa-facebook fa-2x"></i></a>
+        <a href="https://twitter.com/@cs50" class=""><i class="fa-brands fa-twitter fa-2x"></i></a>
+        <a href="https://www.instagram.com/cs50/" class=""><i class="fa-brands fa-instagram fa-2x"></i></a>
+        <a href="https://www.youtube.com/user/cs50tv" class=""><i class="fa-brands fa-youtube fa-2x"></i></a>
+        <a href="https://github.com/cs50" class=""><i class="fa-brands fa-github fa-2x"></i></a>
+      </div>
+      <div class="copyrt">
+        <p class="">@judetochy-2022</p>
+      </div>
+    </footer>
+    <script src="./static/base.js"></script>
+  </body>
+</html>
