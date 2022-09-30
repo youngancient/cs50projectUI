@@ -1,4 +1,7 @@
 const form = document.querySelector('.form form');
+const audio = document.querySelector('#themesong');
+audio.volume = 0;
+console.log(audio)
 
 document.addEventListener("DOMContentLoaded", function () {
   const word = document.querySelector(".word span p");

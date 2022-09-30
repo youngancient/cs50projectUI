@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    font-family: 'Josefin Slab', serif;
   }
   .desktop {
     display: none;
@@ -33,7 +34,7 @@
     text-decoration: none;
     outline: 0;
     color: #990000;
-    font-family: "Lato", sans-serif;
+    font-family: 'Josefin Slab', serif;
   }
   .desktop-links a {
     font-style: normal;
