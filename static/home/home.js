@@ -6,15 +6,18 @@ window.addEventListener("DOMContentLoaded", event => {
   const volume = document.querySelector('.volume');
   const play = document.querySelector('.volume i');
   const audio = document.querySelector("audio");
-  // when the user permits the play. we play the sound
-  play.onclick = ()=>{
-    play.classList.remove('fa-play');
-    play.classList.add('fa-pause');
-    audio.volume = 0.1;
-    audio.play();
-    volume.classList.remove('view');
+  if(sessionStorage.getItem('visited') === null){
+    // when the user permits the play. we play the sound
+    play.onclick = ()=>{
+      play.classList.remove('fa-play');
+      play.classList.add('fa-pause');
+      audio.volume = 0.1;
+      audio.play();
+      volume.classList.remove('view');
+    }
+    volume.classList.add('view');
+    sessionStorage.setItem('visited',true);
   }
-  volume.classList.add('view');
 });
 
 function clearVolume(){
