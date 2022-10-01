@@ -62,14 +62,14 @@
         </div>
       </div>
       <div class="hero">
-        <div class="bg off">
+        <div class="bg">
           <img
             src="./static/assets/cs50rubberduck.jpg"
             alt="background"
             class=""
           />
         </div>
-        <div class="word off">
+        <div class="word">
           <div class="h">
             <h1 class="head">
               This
@@ -207,7 +207,14 @@
             </div>
           </div>
         </div>
+        <div class="volume" style="color: #000;">
+          <div class="nothing" onclick="clearVolume()">
+          </div>
+          <i class="fa-solid fa-play fa-2x"></i>
+        </div>
         <div class="form">
+          <div class="nothing off">
+          </div>
           <form class="" novalidate>
             <img src="./static/assets/female2.svg" alt="alumna" id="alumna">
             <img src="./static/assets/male2.svg" alt="alumnus" id="alumnus">
@@ -228,7 +235,7 @@
           </form>
         </div>
       </div>
-      <div class="mobile below off">
+      <div class="mobile below">
         <div class="img">
           <div class="">
             <img
@@ -261,7 +268,7 @@
         </div>
       </div>
       <div class="trusted">
-        <div class="off">
+        <div class="">
             <h2 class="head">
               <span id="enrolled">2000000</span> Alumni Already!
             </h2>
@@ -291,7 +298,7 @@
             </div>
           </div>
       </div>
-      <div class="not-enrolled off">
+      <div class="not-enrolled">
         <h2 class="head">Are you a NewBie trying to startout in Tech?&#128512;</h2>
         <div class="beginner">
           <img src="./static/assets/googlesearch.JPG" alt="beginner" class="">
@@ -319,8 +326,11 @@
         </div>
       </div>
     </main>
-    <embed src="./static/assets/themesong.mp3" loop="true" autostart="true" width="2" height="0" id="themesong">
-    <footer class="off">
+    <!-- <embed src="./static/assets/themesong.mp3" loop="true" autostart="true" width="2" height="0" id="themesong"> -->
+      <audio>
+        <source src="./static/assets/themesong.mp3" type="audio/mpeg">
+      </audio>
+    <footer class="">
       <div class="social">
         <a href="https://web.facebook.com/cs50?_rdc=1&_rdr" class=""><i class="fa-brands fa-facebook fa-2x"></i></a>
         <a href="https://twitter.com/@cs50" class=""><i class="fa-brands fa-twitter fa-2x"></i></a>

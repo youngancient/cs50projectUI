@@ -304,17 +304,15 @@ body {
 .wait{
   padding: 16px;
 }
-.form{
+.form, .volume{
   position: fixed;
   left: 50%;
   top: 50%;
   height: 100vh;
   width: 100vw;
   backdrop-filter: blur(5px);
-  width: 600px;
-  height: 500px;
-  margin-left: -300px;
-  margin-top: -250px;
+  margin-left: -50vw;
+  margin-top: -50vh;
   z-index: 2;
   display: flex;
   justify-content: center;
@@ -326,7 +324,7 @@ body {
   background: #fff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
-  width: 60%;
+  width: 95%;
   padding: 24px;
   display: flex;
   justify-content: center;
@@ -334,6 +332,15 @@ body {
   flex-direction: column;
   transform: scale(0.1);
   transition: transform 0.4s;
+}
+.form .nothing, .volume .nothing{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.volume i{
+  z-index: 3;
+  cursor: pointer;
 }
 .form form img{
   margin-top: -50px;
@@ -388,10 +395,29 @@ body {
 }
 .view{
   visibility: visible;
-  transition: 0.5s;
+  transition: 1s;
+  background: rgba(0, 0, 0, 0.25);
 }
 #alumnus, #alumna{
   display: none;
+}
+@media screen and (max-width: 300px) {
+  @keyframes move {
+    0%{
+      margin-left: 0%;
+    }
+    90%{
+      margin-left: 49%;
+    }
+    100%{
+      margin-left: 50%;
+    }
+  }
+}
+@media screen and (min-width: 450px) and (max-width: 600px) {
+  .form form{
+    width: 70%;
+  }
 }
 @media screen and (min-width: 728px) {
   .desktop {
@@ -569,9 +595,12 @@ body {
   }
   .form{
     width: 100vw;
-    height: 500px;
+    height: 100vh;
     margin-left: -50vw;
-    margin-top: -250px;
+    margin-top: -50vh;
+  }
+  .form form{
+    width: 60%;
   }
   .wait{
     padding: 0;

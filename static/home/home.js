@@ -1,7 +1,27 @@
 const form = document.querySelector('.form form');
-const audio = document.querySelector('#themesong');
-audio.volume = 0;
-console.log(audio)
+// const audio = document.querySelector('#themesong');
+// audio.volume = 0;
+let volumeShown = true;
+window.addEventListener("DOMContentLoaded", event => {
+  const volume = document.querySelector('.volume');
+  const play = document.querySelector('.volume i');
+  const audio = document.querySelector("audio");
+  // when the user permits the play. we play the sound
+  play.onclick = ()=>{
+    play.classList.remove('fa-play');
+    play.classList.add('fa-pause');
+    audio.volume = 0.1;
+    audio.play();
+    volume.classList.remove('view');
+  }
+  volume.classList.add('view');
+});
+
+function clearVolume(){
+  const volume = document.querySelector('.volume');
+  volume.classList.remove('view');
+  volumeShown = false;
+}
 
 document.addEventListener("DOMContentLoaded", function () {
   const word = document.querySelector(".word span p");
