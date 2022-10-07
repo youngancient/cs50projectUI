@@ -154,9 +154,9 @@ document.addEventListener("DOMContentLoaded", function () {
           div.style.visibility = "visible";
           imageIn();
         });
-      }, 1200);
+      }, 1000);
     });
-  }, 5000);
+  }, 2000);
   window.onscroll = ()=>{
     registerAnimation();
   }
