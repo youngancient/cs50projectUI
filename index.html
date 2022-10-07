@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Josefin+Slab:wght@500;700&family=Lato:wght@400;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Josefin+Slab:wght@500;700&family=Lato:wght@400;700;900&family=Poppins:wght@600;700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -73,9 +73,7 @@
           <div class="h">
             <h1 class="head">
               This
-              <span class="">
-                <p>IS</p> </span
-              >CS50
+              <span class=""> <p>IS</p> </span>CS50
               <div class="desktop">
                 <hr />
               </div>
@@ -207,27 +205,43 @@
             </div>
           </div>
         </div>
-        <div class="volume" style="color: #000;">
-          <div class="nothing" onclick="clearVolume()">
-          </div>
+        <div class="volume" style="color: #000">
+          <div class="nothing" onclick="clearVolume()"></div>
           <i class="fa-solid fa-play fa-2x"></i>
         </div>
         <div class="form">
-          <div class="nothing off">
-          </div>
+          <div class="nothing off"></div>
           <form class="" novalidate>
-            <img src="./static/assets/female2.svg" alt="alumna" id="alumna">
-            <img src="./static/assets/male2.svg" alt="alumnus" id="alumnus">
-            <!-- <p>Invalid details django</p> -->
-            <div class="email" style="margin-top: 0px;">
+            <img
+              src="./static/assets/redcapgirl.svg"
+              alt="alumna"
+              id="alumna"
+            />
+            <img
+              src="./static/assets/redglassguy.svg"
+              alt="alumnus"
+              id="alumnus"
+            />
+            <p class="django-error">Invalid details django</p>
+            <div class="email" style="margin-top: 0px">
               <label class="">Email</label>
-              <input type="email" name="email" id="email" placeholder="e.g jude@gmail.com">
-              <p class="error">Email cannot be empty</p>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="e.g jude@gmail.com"
+              />
+              <p class="error">Email cannot be empty!</p>
             </div>
             <div class="note">
               <label class="">Alumni Note</label>
-              <input type="text" name="note" id="note" placeholder="type: i took CS50">
-              <p class="error">Notes cannot be empty</p>
+              <input
+                type="text"
+                name="note"
+                id="note"
+                placeholder="type: I took CS50"
+              />
+              <p class="error">Notes cannot be empty!</p>
             </div>
             <div class="submit">
               <button type="submit">Join!</button>
@@ -269,39 +283,41 @@
       </div>
       <div class="trusted">
         <div class="">
-            <h2 class="head">
-              <span id="enrolled">2000000</span> Alumni Already!
-            </h2>
+          <h2 class="head">
+            <span id="menrolled">2000000</span> Alumni Already!
+          </h2>
+        </div>
+        <div class="flagcont off">
+          <div class="flags">
+            <img src="./static/assets/country1.jpg" alt="usa" class="" />
+            <img src="./static/assets/country2.png" alt="nigeria" class="" />
+            <img src="./static/assets/country3.webp" alt="britain" class="" />
+            <img
+              src="./static/assets/country4.webp"
+              alt="south africa"
+              class=""
+            />
+            <img src="./static/assets/country5.png" alt="ghana" class="" />
+            <img src="./static/assets/country6.png" alt="ukraine" class="" />
           </div>
-          <div class="flagcont off">
-            <div class="flags">
-              <img src="./static/assets/country1.jpg" alt="usa" class="" />
-              <img src="./static/assets/country2.png" alt="nigeria" class="" />
-              <img src="./static/assets/country3.webp" alt="britain" class="" />
-              <img
-                src="./static/assets/country4.webp"
-                alt="south africa"
-                class=""
-              />
-              <img src="./static/assets/country5.png" alt="ghana" class="" />
-              <img src="./static/assets/country6.png" alt="ukraine" class="" />
+          <p class="">Over 20 Countries</p>
+        </div>
+        <div class="join">
+          <div class="shadow">
+            <p>Join Our Group of</p>
+            <div class="buttons alumni">
+              <button class="" value="alumna">ALUMNA</button>
+              <button class="" value="alumnus">ALUMNUS</button>
             </div>
-            <p class="">Over 20 Countries</p>
           </div>
-          <div class="join">
-            <div class="shadow">
-              <p>Join Our Group of</p>
-              <div class="buttons alumni">
-                <button class="" value="alumna">ALUMNA</button>
-                <button class="" value="alumnus">ALUMNUS</button>
-              </div>
-            </div>
-          </div>
+        </div>
       </div>
       <div class="not-enrolled">
-        <h2 class="head">Are you a NewBie trying to startout in Tech?&#128512;</h2>
+        <h2 class="head">
+          Are you a NewBie trying to startout in Tech?&#128512;
+        </h2>
         <div class="beginner">
-          <img src="./static/assets/googlesearch.JPG" alt="beginner" class="">
+          <img src="./static/assets/googlesearch.JPG" alt="beginner" class="" />
           <h2 class="blured">YOUR SEARCH HAS ENDED!!</h2>
         </div>
         <div class="move">
@@ -310,15 +326,38 @@
         </div>
         <div class="register">
           <div class="cs go-left">
-            <a href="https://rb.gy/twonkf" class=""><img src="./static/assets/fullred.jpg" alt="cs50" class=""></a>
+            <a href="https://rb.gy/twonkf" class=""
+              ><img src="./static/assets/fullred.jpg" alt="cs50" class=""
+            /></a>
           </div>
           <div class="wait">
             <div class="txt go-left">
-              <h3>JOIN <a href="https://rb.gy/twonkf" class="">CS50</a> NOW&#128525;</h3>
+              <h3>
+                JOIN
+                <a href="https://rb.gy/twonkf" class="">CS50</a> NOW&#128525;
+              </h3>
               <div class="tutors">
-                <div class=""><img src="https://cdn.cs50.net/2016/fall/video_projects/staff_gifs/harvard/gifs/Zack-Chauvin.gif" alt="Zack" class=""></div>
-                <div class=""><img src="https://cdn.cs50.net/2016/fall/video_projects/staff_gifs/harvard/gifs/Zamyla-Chan.gif" alt="Zamyla" class=""></div>
-                <div class="desktop"><img src="https://cdn.cs50.net/2016/fall/video_projects/staff_gifs/harvard/gifs/Marcus-Powers.gif" alt="Marcus" class=""></div>
+                <div class="">
+                  <img
+                    src="https://cdn.cs50.net/2016/fall/video_projects/staff_gifs/harvard/gifs/Zack-Chauvin.gif"
+                    alt="Zack"
+                    class=""
+                  />
+                </div>
+                <div class="">
+                  <img
+                    src="https://cdn.cs50.net/2016/fall/video_projects/staff_gifs/harvard/gifs/Zamyla-Chan.gif"
+                    alt="Zamyla"
+                    class=""
+                  />
+                </div>
+                <div class="desktop">
+                  <img
+                    src="https://cdn.cs50.net/2016/fall/video_projects/staff_gifs/harvard/gifs/Marcus-Powers.gif"
+                    alt="Marcus"
+                    class=""
+                  />
+                </div>
               </div>
               <h3>&#128151;We are Waiting...</h3>
             </div>
@@ -327,16 +366,26 @@
       </div>
     </main>
     <!-- <embed src="./static/assets/themesong.mp3" loop="true" autostart="true" width="2" height="0" id="themesong"> -->
-      <audio>
-        <source src="./static/assets/themesong.mp3" type="audio/mpeg">
-      </audio>
+    <audio>
+      <source src="./static/assets/themesong.mp3" type="audio/mpeg" />
+    </audio>
     <footer class="">
       <div class="social">
-        <a href="https://web.facebook.com/cs50?_rdc=1&_rdr" class=""><i class="fa-brands fa-facebook fa-2x"></i></a>
-        <a href="https://twitter.com/@cs50" class=""><i class="fa-brands fa-twitter fa-2x"></i></a>
-        <a href="https://www.instagram.com/cs50/" class=""><i class="fa-brands fa-instagram fa-2x"></i></a>
-        <a href="https://www.youtube.com/user/cs50tv" class=""><i class="fa-brands fa-youtube fa-2x"></i></a>
-        <a href="https://github.com/cs50" class=""><i class="fa-brands fa-github fa-2x"></i></a>
+        <a href="https://web.facebook.com/cs50?_rdc=1&_rdr" class=""
+          ><i class="fa-brands fa-facebook fa-2x"></i
+        ></a>
+        <a href="https://twitter.com/@cs50" class=""
+          ><i class="fa-brands fa-twitter fa-2x"></i
+        ></a>
+        <a href="https://www.instagram.com/cs50/" class=""
+          ><i class="fa-brands fa-instagram fa-2x"></i
+        ></a>
+        <a href="https://www.youtube.com/user/cs50tv" class=""
+          ><i class="fa-brands fa-youtube fa-2x"></i
+        ></a>
+        <a href="https://github.com/cs50" class=""
+          ><i class="fa-brands fa-github fa-2x"></i
+        ></a>
       </div>
       <div class="copyrt">
         <p class="">@judetochy-2022</p>

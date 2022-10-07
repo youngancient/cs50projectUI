@@ -11,7 +11,7 @@ window.addEventListener("DOMContentLoaded", event => {
     play.onclick = ()=>{
       play.classList.remove('fa-play');
       play.classList.add('fa-pause');
-      audio.volume = 0.1;
+      audio.volume = 0.2;
       audio.play();
       volume.classList.remove('view');
     }
@@ -41,6 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const note = document.querySelector('#note');
   const noteError = document.querySelector('.note .error');
   const emailError = document.querySelector('.email .error');
+  const localError = document.querySelector('.django-error');
 
   let shown = false;
   buttons.forEach((button)=>{
@@ -51,10 +52,16 @@ document.addEventListener("DOMContentLoaded", function () {
             if(button.value === "alumnus"){
               alumna.style.display = "none";
               alumnus.style.display = "block";
+              if(sessionStorage.getItem('gender') === null || sessionStorage.getItem('gender') == 'f'){
+                sessionStorage.setItem('gender','m');
+              }
             }
             if(button.value === 'alumna'){
               alumnus.style.display = "none";
               alumna.style.display = 'block';
+              if(sessionStorage.getItem('gender') === null || sessionStorage.getItem('gender') == 'm'){
+                sessionStorage.setItem('gender','f');
+              }
             }
             errors.forEach((them)=>{
               them.style.visibility = 'hidden';
@@ -62,15 +69,16 @@ document.addEventListener("DOMContentLoaded", function () {
             email.value = "";
             note.value = "";
             shown = true;
-        }else{
+          }else{
             form.style.transform = "scale(0.1)";
             shown = false;
+          }
         }
-    }
-  })
-  offs.forEach((off)=>{
-    off.onclick=()=>{
-        if(shown){
+      })
+      offs.forEach((off)=>{
+        off.onclick=()=>{
+          if(shown){
+            localError.style.visibility = 'hidden';
             blur.classList.remove('view');
             form.style.transform = "scale(0.1)";
             errors.forEach((them)=>{
@@ -87,35 +95,54 @@ document.addEventListener("DOMContentLoaded", function () {
     noteError.style.visibility = 'hidden';
   }
   form.addEventListener('submit',(e)=>{
-    if(email.value == "" && note.value == ""){
-        errors.forEach((them)=>{
-            them.style.visibility = "visible";
-            e.preventDefault();
-        })
-    }
-    if(email.value == ""){
-      emailError.innerHTML = "Email cannot be empty";
-      emailError.style.visibility = "visible";
-      e.preventDefault();
-    }
-    if(note.value == ""){
-      emailError.innerHTML = "Alumni Note cannot be empty";
-      noteError.style.visibility = "visible";
-      e.preventDefault();
-    }
-    if(note.value !== "i took CS50"){
-      noteError.innerHTML = "type: 'i took CS50' ";
-      noteError.style.visibility = 'visible';
-      e.preventDefault();
-    }
-    if(ValidateEmail(email) == false ){
-      emailError.innerHTML = "Invalid Email";
-      emailError.style.visibility = "visible";
+    if(localStorage.getItem('data') === null){
+      if(email.value == "" && note.value == ""){
+          errors.forEach((them)=>{
+              them.style.visibility = "visible";
+              e.preventDefault();
+          })
+      }
+      if(email.value == ""){
+        emailError.innerHTML = "Email cannot be empty!";
+        emailError.style.visibility = "visible";
+        e.preventDefault();
+      }
+      if(note.value == ""){
+        noteError.innerHTML = "Alumni Note cannot be empty!";
+        noteError.style.visibility = "visible";
+        e.preventDefault();
+      }
+      if(note.value !== "I took CS50"){
+        noteError.innerHTML = "type: 'I took CS50'! ";
+        noteError.style.visibility = 'visible';
+        e.preventDefault();
+      }
+      if(ValidateEmail(email) == false ){
+        emailError.innerHTML = "Invalid Email!";
+        emailError.style.visibility = "visible";
+        e.preventDefault();
+      }
+      if(ValidateEmail(email) && note.value == "I took CS50"){
+        let gender = sessionStorage.getItem('gender');
+        if(gender == 'm' || gender == 'f'){
+          const obj = {
+            type:gender,
+            mail:email.value
+          };
+          if(localStorage.getItem('data') === null){
+            localStorage.setItem('data', JSON.stringify(obj));
+          }
+        }
+      }
+    }else{
+      localError.style.visibility = 'visible';
+      localError.innerHTML = 'You can only fill this Once!';
       e.preventDefault();
     }
   })
   // animateValue();
-  animateValue("#enrolled", 200000, 200001, 500);
+  animateValue("#enrolled", 199000, 200001, 500);
+  animateValue("#menrolled", 199000, 200001, 500);
   setInterval(() => {
     word.innerHTML = " ";
     word.innerHTML = "WAS";

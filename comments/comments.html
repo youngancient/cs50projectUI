@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Comments</title>
-    <link rel="icon" href="https://cs50.harvard.edu/x/2022/favicon.ico?1663894800">
-    <link rel="stylesheet" href="../static/base.css">
-    <link rel="stylesheet" href="../static/home/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Josefin+Slab:wght@500;700&family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link
+      rel="icon"
+      href="https://cs50.harvard.edu/x/2022/favicon.ico?1663894800"
+    />
+    <link rel="stylesheet" href="../static/base.css" />
+    <link rel="stylesheet" href="../static/comment/comment.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Josefin+Slab:wght@500;700&family=Lato:wght@400;700;900&family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -18,47 +24,154 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-</head>
-<body>
+  </head>
+  <body>
     <header class="">
-        <div class="nav">
-            <div class="logo">
-                <img src="../static/assets/logo.svg" alt="logo" class="">
-            </div>
-            <nav class="desktop desktop-links">
-                <a href="../index.html" class="">HOME</a>
-                <a href="../fangallery/fangallery.html" class="">FAN GALLERY</a>
-                <a href="#" class="">COMMENTS</a>
-                <a href="../cswall/cswall.html" class="">CS50 WALL</a>
-            </nav>
-            <nav class="mobile" style="color: #990000; margin-left:8px;">
-                <i class="fa-solid fa-burger fa-3x menu" onclick="show()"></i>
-            </nav>
+      <div class="nav">
+        <div class="logo">
+          <img src="../static/assets/logo.svg" alt="logo" class="" />
         </div>
+        <nav class="desktop desktop-links">
+          <a href="../index.html" class="">HOME</a>
+          <a href="../fangallery/fangallery.html" class="">FAN GALLERY</a>
+          <a href="#" class="">COMMENTS</a>
+          <a href="../cswall/cswall.html" class="">CS50 WALL</a>
+        </nav>
+        <nav class="mobile" style="color: #990000; margin-left: 8px">
+          <i class="fa-solid fa-burger fa-3x menu" onclick="show()"></i>
+        </nav>
+      </div>
     </header>
     <main class="">
-        <div class="mobile backdrop visible bdr">
-            <div class="nothing" onclick="noShow()">
+      <div class="mobile backdrop visible">
+        <div class="nothing" onclick="noShow()"></div>
+        <div class="slide-in right">
+          <div class="content">
+            <div class="c" onclick="noShow()">
+              <div class="circle">
+                <i class="fa-solid fa-xmark fa-2x"></i>
+              </div>
             </div>
-            <div class="slide-in right bdr">
-                <div class="content">
-                    <div class="c" onclick="noShow()">
-                        <div class="circle">
-                            <i class="fa-solid fa-xmark fa-2x"></i>
-                        </div>
-                    </div>
-                    <div class="mobile-links">
-                        <a href="../index.html" class="" style="margin-top: 0;">HOME</a>
-                        <a href="../fangallery/fangallery.html" class="">FAN GALLERY</a>
-                        <a href="#" class="">COMMENT</a>
-                        <a href="../cswall/cswall.html" class="">CS50 WALL</a>
-                    </div> 
-                </div>
+            <div class="mobile-links">
+              <a href="../index.html" class="" style="margin-top: 0">HOME</a>
+              <a href="../fangallery/fangallery.html" class="">FAN GALLERY</a>
+              <a href="#" class="">COMMENT</a>
+              <a href="../cswall/cswall.html" class="">CS50 WALL</a>
             </div>
+          </div>
         </div>
-        
+      </div>
+      <div class="main">
+        <div class="word">
+          <div class="head">
+            <h2>Comments</h2>
+            <hr />
+          </div>
+        </div>
+        <div class="paddit">
+          <div class="comments">
+            <div class="commentgrid">
+              <div class="mobile"><hr /></div>
+              <div class="info">
+                <div class="author"><p>YoungAncient</p></div>
+                <div class="date"><p># October 7 2022</p></div>
+              </div>
+              <div class="commentblock">
+                <p>I love CS50 !!!</p>
+              </div>
+            </div>
+            <div class="commentgrid">
+              <div class="mobile"><hr /></div>
+              <div class="info">
+                <div class="author"><p>Sandee</p></div>
+                <div class="date"><p># January 21 2022</p></div>
+              </div>
+              <div class="commentblock">
+                <p>
+                  From the lectures to the problem sets, it has been a very
+                  wonderful experience !!!
+                </p>
+              </div>
+            </div>
+            <div class="commentgrid">
+              <div class="mobile"><hr /></div>
+              <div class="info">
+                <div class="author"><p>Jamiu</p></div>
+                <div class="date"><p># February 20 2021</p></div>
+              </div>
+              <div class="commentblock">
+                <p>
+                  I never regretted ever taking CS50 and i will surely recommend
+                  it to everyone
+                </p>
+              </div>
+            </div>
+            <div class="commentgrid">
+              <div class="mobile"><hr /></div>
+              <div class="info">
+                <div class="author"><p>Mikasa</p></div>
+                <div class="date"><p># December 2 2020</p></div>
+              </div>
+              <div class="commentblock">
+                <p>
+                  After taking this course, i had a solid grasp and foundation
+                  and recommended it to Eren and Armin
+                </p>
+              </div>
+            </div>
+            <div class="commentgrid">
+              <div class="mobile"><hr /></div>
+              <div class="info">
+                <div class="author"><p>SoniaBlades</p></div>
+                <div class="date"><p># May 20 2022</p></div>
+              </div>
+              <div class="commentblock">
+                <p>A wonderful course, A must for beginners</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form">
+            <div class="nothing" onclick="off()"></div>
+          <form novalidate>
+            <!-- <img src="../static/assets/male2.svg" alt="alumnus" id="alumnus"> -->
+            <img src="../static/assets/female2.svg" alt="alumna" id="alumna" />
+            <p class="django-error">Email cannot be empty!</p>
+            <div class="sub">
+              <label for="text">Code Name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="your name here... e.g cyborg"
+              />
+              <p class="error name">Name cannot be empty!</p>
+            </div>
+            <div class="sub">
+              <label for="comment" class="">Comment</label>
+              <textarea
+                name="comment"
+                id="comment"
+                cols="30"
+                rows="5"
+                placeholder="your comments here"
+              ></textarea>
+              <p class="error comment">Comment cannot be empty!</p>
+            </div>
+            <div class="submit">
+              <button type="submit">Post Comment</button>
+            </div>
+          </form>
+        </div>
+        <div class="commentbutton">
+          <button id="pen">
+            <p>Comment</p>
+            <i class="fa-solid fa-pen"></i>
+          </button>
+        </div>
+      </div>
     </main>
-    <!-- <footer class="">
+    <footer class="">
         <div class="social">
           <a href="https://web.facebook.com/cs50?_rdc=1&_rdr" class=""><i class="fa-brands fa-facebook fa-2x"></i></a>
           <a href="https://twitter.com/@cs50" class=""><i class="fa-brands fa-twitter fa-2x"></i></a>
@@ -69,7 +182,8 @@
         <div class="copyrt">
           <p class="">@judetochy-2022</p>
         </div>
-      </footer> -->
+      </footer>
     <script src="../static/base.js"></script>
-</body>
+    <script src="../static/comment/script.js"></script>
+  </body>
 </html>
