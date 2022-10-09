@@ -7,7 +7,7 @@
     <title>CSWall</title>
     <link rel="icon" href="https://cs50.harvard.edu/x/2022/favicon.ico?1663894800">
     <link rel="stylesheet" href="../static/base.css">
-    <link rel="stylesheet" href="../static/home/style.css">
+    <link rel="stylesheet" href="../static/wall/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Josefin+Slab:wght@500;700&family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
@@ -37,7 +37,7 @@
         </div>
     </header>
     <main class="">
-        <div class="mobile backdrop visible bdr">
+        <div class="mobile backdrop visible">
             <div class="nothing" onclick="noShow()">
             </div>
             <div class="slide-in right bdr">
@@ -56,9 +56,205 @@
                 </div>
             </div>
         </div>
-        
     </main>
-    <!-- <footer class="">
+    <div class="wall">
+        <div class="wall-img">
+            <h2 class="spec">CS50 WALL</h2>
+        </div>
+        <div class="names">
+            <div class="grid">
+            </div>
+            <div class="grid">
+            </div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid"></div>
+            <div class="grid "></div>
+            <div class="grid "></div>
+            <div class="grid "></div>
+            <div class="grid "></div>
+            <div class="grid "></div>
+            <div class="grid "></div>
+            <div class="grid "></div>
+            <div class="grid "></div>
+            <div class="grid "></div>
+            <div class="grid "></div>
+        </div>
+        <div class="popup form-popup">
+            <div class="nothing" onclick="off()"></div>
+            <form class="nameForm">
+                <p class="error local-error" style="text-align:center;">
+                    Your Name is on CSWall already!</p>
+                <div class="sub" style="margin-top: 0;">
+                    <label for="name">Nickname</label>
+                    <input type="text" name="name" id="name" placeholder="nickname here">
+                    <p class="error name-error">Name cannot be empty</p>
+                </div>
+                <div class="sub">
+                    <label for="name">Font</label>
+                    <select name="font" id="font">
+                    
+                    </select>
+                    <p class="error font-error">You must select a font</p>
+                </div>
+                <div class="sub">
+                    <label for="name">Social link</label>
+                    <input type="url" name="name" id="link" placeholder="linkedin or github or twitter">
+                    <p class="error link-error">Social link cannot be empty</p>
+                </div>
+                <div class="sub">
+                    <button type="submit">Add</button>
+                </div>
+            </form>
+        </div>
+        <div class="info-popup popup">
+            <div class="nothing bdr" onclick="iOff()"></div>
+            <div class="info">
+                <p>Click the space on the wall to add name or click the add button below</p>
+                <div class="info-btn">
+                    <button onclick="iOff()">OK</button>
+                </div>
+            </div>
+        </div>
+        <div class="cancel-popup popup">
+            <div class="nothing" onclick="cOff()"></div>
+            <div class="c-info">
+                <p>This space have been used already by </p>
+                <div class="info-btn">
+                    <button onclick="cOff()">OK</button>
+                </div>
+            </div>
+        </div>
+        <div class="button">
+            <button class="">Add Name</button>
+        </div>
+    </div>
+    <footer class="">
         <div class="social">
           <a href="https://web.facebook.com/cs50?_rdc=1&_rdr" class=""><i class="fa-brands fa-facebook fa-2x"></i></a>
           <a href="https://twitter.com/@cs50" class=""><i class="fa-brands fa-twitter fa-2x"></i></a>
@@ -69,7 +265,8 @@
         <div class="copyrt">
           <p class="">@judetochy-2022</p>
         </div>
-      </footer> -->
+      </footer>
     <script src="../static/base.js"></script>
+    <script src="../static/wall/script.js"></script>
 </body>
 </html>
