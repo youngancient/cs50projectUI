@@ -151,67 +151,74 @@ function check(val) {
 
 function go(container, index) {
   nameForm.addEventListener("submit", (e) => {
-    if(localStorage.getItem('user') === null){
-      if (nickname.value == "" && font == "" && link.value == "") {
-        fontError.innerHTML = "font cannot be empty";
-        nameError.innerHTML = "Name cannot be empty";
-        errors.forEach((them) => {
-          them.style.visibility = "visible";
-        });
-        e.preventDefault();
-      }
-      if (nickname.value == "" && link.value == "") {
-        nameError.innerHTML = "Name cannot be empty";
-        nameError.style.visibility = "visible";
-        linkError.style.visibility = "visible";
-        e.preventDefault();
-      }
-      if (nickname.value == "") {
-        nameError.innerHTML = "Name cannot be empty";
-        nameError.style.visibility = "visible";
-        e.preventDefault();
-      }
-      if (nickname.value.length > 15) {
-        nameError.innerHTML = "Name is too long blud";
-        nameError.style.visibility = "visible";
-        e.preventDefault();
-      }
-      if (link.value == "") {
-        linkError.style.visibility = "visible";
-        e.preventDefault();
-      }
-      if (font == "") {
-        fontError.innerHTML = "font cannot be empty";
-        fontError.style.visibility = "visible";
-        e.preventDefault();
-      }
-      if (!trueFont) {
-        fontError.innerHTML = "invalid font";
-        fontError.style.visibility = "visible";
-        e.preventDefault();
-      }
-      if (
-        nickname.value.length <= 15 &&
-        nickname.value.length > 0 &&
-        trueFont &&
-        link.value.length > 0
-      ) {
-        container.innerHTML = `<p style='font-family:${font};'>${nickname.value}</p>`;
-        const userObj = {
-          grid: index,
-          userName: nickname.value,
-          fontType: font,
-          userLink: link.value,
-        };
-        localStorage.setItem('user', JSON.stringify(userObj));
-        e.preventDefault();
-        off();
-      } else {
-        e.preventDefault();
-      }
+    if(localStorage.getItem('data') !== null){
+        if(localStorage.getItem('user') === null){
+          if (nickname.value == "" && font == "" && link.value == "") {
+            fontError.innerHTML = "font cannot be empty";
+            nameError.innerHTML = "Name cannot be empty";
+            errors.forEach((them) => {
+              them.style.visibility = "visible";
+            });
+            e.preventDefault();
+          }
+          if (nickname.value == "" && link.value == "") {
+            nameError.innerHTML = "Name cannot be empty";
+            nameError.style.visibility = "visible";
+            linkError.style.visibility = "visible";
+            e.preventDefault();
+          }
+          if (nickname.value == "") {
+            nameError.innerHTML = "Name cannot be empty";
+            nameError.style.visibility = "visible";
+            e.preventDefault();
+          }
+          if (nickname.value.length > 15) {
+            nameError.innerHTML = "Name is too long blud";
+            nameError.style.visibility = "visible";
+            e.preventDefault();
+          }
+          if (link.value == "") {
+            linkError.style.visibility = "visible";
+            e.preventDefault();
+          }
+          if (font == "") {
+            fontError.innerHTML = "font cannot be empty";
+            fontError.style.visibility = "visible";
+            e.preventDefault();
+          }
+          if (!trueFont) {
+            fontError.innerHTML = "invalid font";
+            fontError.style.visibility = "visible";
+            e.preventDefault();
+          }
+          if (
+            nickname.value.length <= 15 &&
+            nickname.value.length > 0 &&
+            trueFont &&
+            link.value.length > 0
+          ) {
+            container.innerHTML = `<p style='font-family:${font};'>${nickname.value}</p>`;
+            const userObj = {
+              grid: index,
+              userName: nickname.value,
+              fontType: font,
+              userLink: link.value,
+            };
+            localStorage.setItem('user', JSON.stringify(userObj));
+            e.preventDefault();
+            off();
+          } else {
+            e.preventDefault();
+          }
+        }else{
+          localError.innerHTML= 'Your Name is on CSWall already!';
+          localError.style.visibility = 'visible';
+          e.preventDefault();
+        }
     }else{
-      localError.style.visibility = 'visible';
-      e.preventDefault();
+        localError.innerHTML= 'Be an <a href="../index.html">ALUMNI</a> First!';
+          localError.style.visibility = 'visible';
+          e.preventDefault();
     }
   });
   
