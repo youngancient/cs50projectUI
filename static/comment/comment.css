@@ -137,6 +137,7 @@
   align-items: center;
   transition: 0.5s;
   visibility: hidden;
+  background: rgba(0, 0, 0, 0.25);
 }
 .form .nothing{
     position: absolute;

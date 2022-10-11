@@ -120,6 +120,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     const optVal = ele.split(',');
     option.innerHTML = optVal[0];
+    option.style.fontFamily = ele;
     selectFont.appendChild(option);
   })
   let font = selectFont.options[selectFont.selectedIndex].value;
