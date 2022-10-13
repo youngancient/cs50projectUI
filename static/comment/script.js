@@ -22,8 +22,19 @@ pen.onclick = ()=>{
         errors.forEach((them)=>{
             them.style.visibility = 'hidden';
           });
+        if(localStorage.getItem('data') === null){
         const chosen = formImgs[Math.floor(Math.random() * formImgs.length)];
         chosen.style.display = 'block';
+        }else{
+            const data = localStorage.getItem('data');
+            const obj = JSON.parse(data);
+            if(obj.type == 'm'){
+                alumnus.style.display = 'block';
+            }
+            if(obj.type == 'f'){
+                alumna.style.display = 'block';
+            }
+        }
         codeName.value = '';
         comment.value = '';
         shown = true;
